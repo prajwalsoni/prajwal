@@ -7,6 +7,7 @@ const Top = styled.div`
   display: flex;
   max-width: 100%;
   gap: 12px;
+  align-items: flex-start;
 `;
 const Image = styled.img`
   height: 50px;
@@ -25,7 +26,7 @@ const Body = styled.div`
 
 const Name = styled.div`
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
   color: ${({ theme }) => theme.text_primary + 99};
 
   @media only screen and (max-width: 768px) {
@@ -34,7 +35,7 @@ const Name = styled.div`
 `;
 const Degree = styled.div`
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   color: ${({ theme }) => theme.text_secondary + 99};
 
   @media only screen and (max-width: 768px) {
@@ -43,7 +44,7 @@ const Degree = styled.div`
 `;
 const Date = styled.div`
   font-size: 12px;
-  font-weight: 400px;
+  font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 80};
 
   @media only screen and (max-width: 768px) {
@@ -101,7 +102,7 @@ const EducationCard = ({ education }) => {
       date={education.date}
     >
       <Top>
-        <Image src={education.img} />
+        <Image src={education.img} alt={education.school} />
         <Body>
           <Name>{education.school}</Name>
           <Degree>{education.degree}</Degree>

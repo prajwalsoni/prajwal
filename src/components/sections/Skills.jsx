@@ -4,12 +4,13 @@ import { skills } from "../../data/constants";
 import { Tilt } from "react-tilt";
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
 `;
 const Wrapper = styled.div`
   position: relative;
@@ -19,7 +20,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
-  gap: 12px;
+  gap: 16px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -42,6 +43,7 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
+  max-width: 720px;
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -52,12 +54,12 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-  gap: 50px;
+  gap: 28px;
   justify-content: center;
 `;
 const Skill = styled.div`
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   background-color: rgba(17, 25, 40, 0.83);
   border: 1px solid rgba(255, 255, 255, 0.125);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -65,13 +67,13 @@ const Skill = styled.div`
   padding: 18px 36px;
 
   @media (max-width: 768px) {
-    max-width: 400px;
-    padding: 10px 36px;
+    max-width: 100%;
+    padding: 18px 20px;
   }
 
   @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+    max-width: 100%;
+    padding: 16px;
   }
 `;
 
@@ -161,8 +163,8 @@ const Skills = () => {
 
         <SkillsContainer>
           {skills.map((skill, index) => (
-            <Tilt>
-              <Skill key={`skill-${index}`}>
+            <Tilt key={`skill-${index}`}>
+              <Skill>
                 <SkillTitle>{skill.title}</SkillTitle>
                 <SkillList>
                   {skill.skills.map((item, index_x) => (

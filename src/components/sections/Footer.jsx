@@ -8,7 +8,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const FooterContainer = styled.div`
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 16px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -38,13 +38,14 @@ const Nav = styled.nav`
   margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   @media (max-width: 768px) {
-    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    text-align: center;
     font-size: 12px;
   }
 `;
@@ -65,6 +66,8 @@ const NavLink = styled.a`
 const SocialMediaIcons = styled.div`
   display: flex;
   margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 const SocialMediaIcon = styled.a`
   display: inline-block;
@@ -74,6 +77,9 @@ const SocialMediaIcon = styled.a`
   transition: color 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
+  }
+  @media (max-width: 768px) {
+    margin: 0.35rem 0.7rem;
   }
 `;
 
@@ -97,16 +103,16 @@ const Footer = () => {
           <NavLink href="#Education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.github} target="display">
+          <SocialMediaIcon href={Bio.github} target="_blank" rel="noreferrer">
             <GithubIcon /> {/* Changed icon */}
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
+          <SocialMediaIcon href={Bio.twitter} target="_blank" rel="noreferrer">
             <TwitterIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+          <SocialMediaIcon href={Bio.linkedin} target="_blank" rel="noreferrer">
             <LinkedInIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
+          <SocialMediaIcon href={Bio.insta} target="_blank" rel="noreferrer">
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>

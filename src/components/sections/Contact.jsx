@@ -8,8 +8,10 @@ const Container = styled.div`
   gap: 12px;
   z-index: 1;
   align-items: center;
+  width: 100%;
+  padding: 0 16px;
   @media (max-width: 960px) {
-    padding: 0px;
+    padding: 0 16px;
   }
 `;
 
@@ -22,7 +24,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1350px;
   padding: 0px 0px 80px 0px;
-  gap: 12px;
+  gap: 16px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -62,6 +64,10 @@ const ContactForm = styled.form`
   box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
+  @media (max-width: 640px) {
+    width: 100%;
+    padding: 20px 16px;
+  }
 `;
 const ContactTitle = styled.div`
   font-size: 28px;
@@ -114,6 +120,9 @@ const EarthFrame = styled.div`
   width: 100%;
   height: 320px;
   position: relative;
+  @media (max-width: 640px) {
+    height: 240px;
+  }
 `;
 
 const EarthFallback = styled.div`

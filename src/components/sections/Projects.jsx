@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
-  gap: 12px;
+  gap: 16px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -45,6 +45,7 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
+  max-width: 720px;
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -52,6 +53,8 @@ const Desc = styled.div`
 
 const ToggleButtonGroup = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: 1.5px solid ${({ theme }) => theme.primary}; /* Border retained */
   color: ${({ theme }) => theme.primary};
   font-size: 16px;
@@ -60,6 +63,8 @@ const ToggleButtonGroup = styled.div`
   margin: 22px 0;
   @media (max-width: 768px) {
     font-size: 12px;
+    width: 100%;
+    max-width: 360px;
   }
 `;
 
@@ -89,9 +94,10 @@ const Divider = styled.div`
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 28px;
   flex-wrap: wrap;
+  width: 100%;
 `;
 
 const Projects = ({ openModal, setOpenModal }) => {

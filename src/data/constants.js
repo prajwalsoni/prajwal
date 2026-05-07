@@ -292,8 +292,23 @@ export const experiences = [
     img: "data:image/jpeg;base64,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",
     role: "Software Developer Intern",
     company: "Byte Digital Australia",
-    date: "Jan 2026 - Present",
+    date: "January 2026 to April 2026",
     desc: "Worked on full-stack platform enhancements including Stripe payments, class booking and teacher login APIs, dashboard UI revamps, Leads pages, centralized CSS theming, Datadog-supported deployments, and an embeddable Agentic AI chatbot script. Fixed 200+ issues across Mathdingo platforms and received the Legend Award for internship contributions.",
+    skills: [
+      "React.js",
+      "Python",
+      "Django",
+      "Django REST Framework",
+    ],
+    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
+  },
+  {
+    id: 2,
+    img: "data:image/jpeg;base64,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",
+    role: "Associate Software Engineer",
+    company: "Byte Digital Australia",
+    date: "April 2026 - Present",
+    desc: "Tech enthusiast engineer delivering full-stack platform enhancements across Stripe payments, class booking and teacher login APIs, dashboard UI revamps, Leads pages, centralized CSS theming, Datadog-supported deployments, and an embeddable Agentic AI chatbot script. Fixed 200+ issues across Mathdingo platforms and received the Legend Award for internship contributions.",
     skills: [
       "React.js",
       "Python",
@@ -399,6 +414,169 @@ export const education = [
   //   degree: "ICSC(X), Science with Computer",
   // },
 ];
+const createProjectCover = ({ primary, secondary, accent, accentSoft, artwork }) =>
+  `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="${primary}" />
+          <stop offset="100%" stop-color="${secondary}" />
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+          <stop offset="0%" stop-color="${accent}" stop-opacity="0.9" />
+          <stop offset="100%" stop-color="${accent}" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.26" />
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08" />
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="720" fill="url(#bg)" rx="36" />
+      <rect width="1200" height="720" fill="url(#glow)" rx="36" />
+      <circle cx="1000" cy="110" r="170" fill="${accent}" opacity="0.18" />
+      <circle cx="170" cy="620" r="210" fill="${accentSoft}" opacity="0.18" />
+      <circle cx="1080" cy="620" r="210" fill="#ffffff" opacity="0.07" />
+      <rect x="64" y="64" width="1072" height="592" rx="34" fill="url(#glass)" stroke="#ffffff" stroke-opacity="0.16" />
+      <rect x="96" y="96" width="1008" height="528" rx="30" fill="#0f172a" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.12" />
+      <rect x="126" y="124" width="948" height="38" rx="19" fill="#ffffff" fill-opacity="0.1" />
+      <circle cx="160" cy="143" r="8" fill="#ffffff" fill-opacity="0.7" />
+      <circle cx="188" cy="143" r="8" fill="#ffffff" fill-opacity="0.4" />
+      <circle cx="216" cy="143" r="8" fill="#ffffff" fill-opacity="0.25" />
+      ${artwork}
+    </svg>
+  `)}`;
+
+const projectCovers = {
+  todos: createProjectCover({
+    primary: "#0f172a",
+    secondary: "#1d4ed8",
+    accent: "#22c55e",
+    accentSoft: "#38bdf8",
+    artwork: `
+      <rect x="168" y="210" width="420" height="304" rx="28" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.2" />
+      <rect x="620" y="218" width="286" height="110" rx="24" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="930" y="218" width="92" height="110" rx="24" fill="#22c55e" fill-opacity="0.9" />
+      <rect x="620" y="356" width="402" height="158" rx="28" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="204" y="252" width="38" height="38" rx="12" fill="#22c55e" />
+      <path d="M214 271l10 10 18-20" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <rect x="266" y="258" width="258" height="16" rx="8" fill="#ffffff" fill-opacity="0.82" />
+      <rect x="266" y="286" width="194" height="12" rx="6" fill="#ffffff" fill-opacity="0.38" />
+      <rect x="204" y="334" width="38" height="38" rx="12" fill="#38bdf8" />
+      <path d="M214 353l10 10 18-20" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <rect x="266" y="340" width="232" height="16" rx="8" fill="#ffffff" fill-opacity="0.82" />
+      <rect x="266" y="368" width="172" height="12" rx="6" fill="#ffffff" fill-opacity="0.38" />
+      <rect x="204" y="416" width="38" height="38" rx="12" fill="#ffffff" fill-opacity="0.18" />
+      <rect x="266" y="422" width="210" height="16" rx="8" fill="#ffffff" fill-opacity="0.76" />
+      <rect x="266" y="450" width="154" height="12" rx="6" fill="#ffffff" fill-opacity="0.34" />
+      <circle cx="762" cy="274" r="42" fill="#22c55e" fill-opacity="0.88" />
+      <rect x="700" y="390" width="110" height="18" rx="9" fill="#ffffff" fill-opacity="0.8" />
+      <rect x="700" y="426" width="190" height="14" rx="7" fill="#ffffff" fill-opacity="0.38" />
+      <rect x="700" y="458" width="152" height="14" rx="7" fill="#ffffff" fill-opacity="0.38" />
+    `,
+  }),
+  selects: createProjectCover({
+    primary: "#3b0764",
+    secondary: "#db2777",
+    accent: "#f59e0b",
+    accentSoft: "#fb7185",
+    artwork: `
+      <rect x="152" y="196" width="896" height="352" rx="34" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.18" />
+      <rect x="198" y="250" width="310" height="244" rx="26" fill="#ffffff" fill-opacity="0.14" />
+      <path d="M286 292h132l26 120H260l26-120z" fill="#f59e0b" fill-opacity="0.94" />
+      <path d="M314 292c0-30 18-48 38-48s38 18 38 48" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round" />
+      <circle cx="656" cy="304" r="78" fill="#ffffff" fill-opacity="0.16" />
+      <rect x="760" y="244" width="226" height="28" rx="14" fill="#ffffff" fill-opacity="0.86" />
+      <rect x="760" y="292" width="178" height="18" rx="9" fill="#ffffff" fill-opacity="0.42" />
+      <rect x="590" y="364" width="382" height="130" rx="24" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="628" y="398" width="96" height="62" rx="18" fill="#fb7185" fill-opacity="0.86" />
+      <circle cx="856" cy="430" r="32" fill="#f59e0b" />
+      <circle cx="930" cy="430" r="32" fill="#ffffff" fill-opacity="0.22" />
+    `,
+  }),
+  hotel: createProjectCover({
+    primary: "#0c4a6e",
+    secondary: "#0891b2",
+    accent: "#f97316",
+    accentSoft: "#67e8f9",
+    artwork: `
+      <rect x="168" y="192" width="864" height="366" rx="34" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.16" />
+      <rect x="214" y="250" width="324" height="248" rx="24" fill="#ffffff" fill-opacity="0.14" />
+      <rect x="278" y="220" width="196" height="62" rx="22" fill="#f97316" fill-opacity="0.9" />
+      <rect x="264" y="320" width="70" height="70" rx="18" fill="#ffffff" fill-opacity="0.74" />
+      <rect x="352" y="320" width="70" height="70" rx="18" fill="#ffffff" fill-opacity="0.74" />
+      <rect x="440" y="320" width="70" height="70" rx="18" fill="#ffffff" fill-opacity="0.74" />
+      <rect x="264" y="408" width="70" height="70" rx="18" fill="#ffffff" fill-opacity="0.28" />
+      <rect x="352" y="408" width="70" height="70" rx="18" fill="#67e8f9" fill-opacity="0.86" />
+      <rect x="440" y="408" width="70" height="70" rx="18" fill="#ffffff" fill-opacity="0.28" />
+      <rect x="604" y="232" width="360" height="94" rx="24" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="604" y="354" width="360" height="144" rx="24" fill="#ffffff" fill-opacity="0.12" />
+      <circle cx="664" cy="279" r="30" fill="#f97316" />
+      <rect x="718" y="258" width="180" height="18" rx="9" fill="#ffffff" fill-opacity="0.8" />
+      <rect x="718" y="290" width="132" height="14" rx="7" fill="#ffffff" fill-opacity="0.38" />
+      <rect x="640" y="394" width="124" height="70" rx="20" fill="#67e8f9" fill-opacity="0.86" />
+      <rect x="790" y="394" width="124" height="70" rx="20" fill="#ffffff" fill-opacity="0.18" />
+    `,
+  }),
+  process: createProjectCover({
+    primary: "#3f3f46",
+    secondary: "#18181b",
+    accent: "#60a5fa",
+    accentSoft: "#a78bfa",
+    artwork: `
+      <rect x="182" y="188" width="300" height="380" rx="38" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.18" />
+      <rect x="208" y="224" width="248" height="290" rx="28" fill="#0f172a" fill-opacity="0.24" />
+      <circle cx="332" cy="536" r="18" fill="#ffffff" fill-opacity="0.54" />
+      <circle cx="786" cy="282" r="88" fill="#ffffff" fill-opacity="0.12" />
+      <circle cx="786" cy="282" r="42" fill="#60a5fa" fill-opacity="0.9" />
+      <path d="M786 220v24M786 320v24M724 282h24M824 282h24M742 238l16 16M814 310l16 16M830 238l-16 16M758 310l-16 16" stroke="#ffffff" stroke-width="12" stroke-linecap="round" />
+      <rect x="610" y="404" width="356" height="120" rx="28" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="646" y="440" width="110" height="18" rx="9" fill="#ffffff" fill-opacity="0.8" />
+      <rect x="646" y="474" width="188" height="14" rx="7" fill="#ffffff" fill-opacity="0.36" />
+      <rect x="842" y="434" width="90" height="56" rx="18" fill="#a78bfa" fill-opacity="0.86" />
+    `,
+  }),
+  sphere: createProjectCover({
+    primary: "#14532d",
+    secondary: "#0f766e",
+    accent: "#38bdf8",
+    accentSoft: "#22c55e",
+    artwork: `
+      <rect x="158" y="192" width="270" height="338" rx="30" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="462" y="192" width="270" height="338" rx="30" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="766" y="192" width="270" height="338" rx="30" fill="#ffffff" fill-opacity="0.12" />
+      <circle cx="294" cy="278" r="52" fill="#22c55e" fill-opacity="0.9" />
+      <rect x="214" y="366" width="160" height="18" rx="9" fill="#ffffff" fill-opacity="0.8" />
+      <rect x="214" y="400" width="120" height="14" rx="7" fill="#ffffff" fill-opacity="0.36" />
+      <path d="M544 266c34-52 106-52 140 0 22 34 10 82-24 108l-58 44-58-44c-34-26-46-74-24-108z" fill="#38bdf8" fill-opacity="0.94" />
+      <rect x="518" y="432" width="158" height="14" rx="7" fill="#ffffff" fill-opacity="0.36" />
+      <rect x="822" y="250" width="158" height="188" rx="24" fill="#ffffff" fill-opacity="0.14" />
+      <circle cx="858" cy="474" r="18" fill="#38bdf8" />
+      <rect x="892" y="464" width="88" height="18" rx="9" fill="#ffffff" fill-opacity="0.78" />
+    `,
+  }),
+  foods: createProjectCover({
+    primary: "#7c2d12",
+    secondary: "#ea580c",
+    accent: "#fde047",
+    accentSoft: "#fb923c",
+    artwork: `
+      <rect x="172" y="208" width="430" height="320" rx="30" fill="#ffffff" fill-opacity="0.12" />
+      <circle cx="386" cy="368" r="118" fill="#ffffff" fill-opacity="0.86" />
+      <circle cx="386" cy="368" r="96" fill="#fde047" fill-opacity="0.95" />
+      <circle cx="346" cy="334" r="14" fill="#ef4444" />
+      <circle cx="430" cy="344" r="14" fill="#ef4444" />
+      <circle cx="366" cy="404" r="14" fill="#16a34a" />
+      <circle cx="440" cy="404" r="14" fill="#16a34a" />
+      <rect x="650" y="214" width="360" height="120" rx="26" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="650" y="360" width="360" height="168" rx="26" fill="#ffffff" fill-opacity="0.12" />
+      <rect x="692" y="254" width="188" height="18" rx="9" fill="#ffffff" fill-opacity="0.84" />
+      <rect x="692" y="288" width="126" height="14" rx="7" fill="#ffffff" fill-opacity="0.38" />
+      <rect x="692" y="404" width="122" height="76" rx="20" fill="#fb923c" fill-opacity="0.9" />
+      <rect x="842" y="404" width="122" height="76" rx="20" fill="#ffffff" fill-opacity="0.18" />
+    `,
+  }),
+};
+
 export const projects = [
   // {
   //   id: 11,
@@ -426,8 +604,7 @@ export const projects = [
     date: "Jun 2023 - Nov 2023",
     description:
       "A full-stack todo app manages tasks with frontend and backend integration for seamless functionality",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-2d3f5.appspot.com/o/Screenshot%20(20).png?alt=media&token=4ff60664-40f6-447e-9fdf-1bcf19b13ad3",
+    image: projectCovers.todos,
     tags: [
       "Java",
       "Springboot",
@@ -475,8 +652,7 @@ export const projects = [
     date: "Dec 2023",
     description:
       "A full-stack ecommerce app handles online transactions, inventory management, and user interactions seamlessly",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-2d3f5.appspot.com/o/Screenshot%20(21).png?alt=media&token=7b77fc44-ff4d-4b14-8078-ca769643684f",
+    image: projectCovers.selects,
     tags: [
       "React Js",
       "Springboot",
@@ -498,8 +674,7 @@ export const projects = [
     date: "Jan 2024",
     description:
       "A full-stack hotel booking app manages reservations, room availability, payments, and user accounts efficiently",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-2d3f5.appspot.com/o/Screenshot%20(19).png?alt=media&token=4b7d7e50-25bb-4bbe-82d2-763d3ab21e0e",
+    image: projectCovers.hotel,
     tags: ["React js", "Springboot", "Vite", "POSTMAN API", "MYSQL", "Tailwind","MUI"],
     category: "web app",
     github: "https://github.com/prajwalsoni/soniinternationals_hotel_booking_backend",
@@ -511,8 +686,7 @@ export const projects = [
     date: "Nov 2020 - Apr 2021",
     description:
       "This Project proposes an “Process Selection System”. Keep track of your personal requirements and according to those requirements suggest you best model to make your software",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-2d3f5.appspot.com/o/ProcessSelectionModel.jpeg?alt=media&token=c4b77661-3d58-4ff6-b4da-4b0dc245c50f",
+    image: projectCovers.process,
     tags: ["Java", "Android Studios", "Process Selection Model", "Google Drive"],
     category: "android app",
     github: "https://drive.google.com/file/d/1TX4MRKiZ5vspZygDGQY77f1E-NnzzuZP/view?usp=drive_link",
@@ -537,8 +711,7 @@ export const projects = [
     date: "Jan 2024",
     description:
       "A full-stack social media app integrates reels and chat features for engaging user interactions and content sharing.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-2d3f5.appspot.com/o/Screenshot%20(23).png?alt=media&token=a2267b37-a812-44db-966f-9c09fbbf231e",
+    image: projectCovers.sphere,
     tags: ["React Js", "Springboot", "Redux", "Tailwind","MYSQL","MUI"],
     category: "web app",
     github: "https://github.com/prajwalsoni/sonisphere_backend",
@@ -550,8 +723,7 @@ export const projects = [
     date: "Feb 2024",
     description:
       "A full-stack food app includes online ordering, menu upload system for owners, ensuring efficient operations and enhanced user experience.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-2d3f5.appspot.com/o/Screenshot%20(22).png?alt=media&token=e7c60a66-5b42-4db9-b627-13332ab4020b",
+    image: projectCovers.foods,
     tags: ["React Js", "Springboot", "Stripe Payment GATEWAY", "Tailwind","Redux","MUI","MYSQL"],
     category: "web app",
     github: "https://github.com/prajwalsoni/soni-foods_backend",

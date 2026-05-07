@@ -8,10 +8,69 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0px !important;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #090917;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+canvas {
+  max-width: 100%;
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.vertical-timeline {
+  width: 100% !important;
+  max-width: 1100px !important;
+}
+
+.vertical-timeline::before {
+  left: 50% !important;
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline::before {
+    left: 18px !important;
+  }
+
+  .vertical-timeline-element-content {
+    margin-left: 52px !important;
+  }
+
+  .vertical-timeline-element-icon {
+    width: 36px !important;
+    height: 36px !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical-timeline-element-content {
+    padding: 14px !important;
+    margin-left: 46px !important;
+  }
 }
 
 /* width */

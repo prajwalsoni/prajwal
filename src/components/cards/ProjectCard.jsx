@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-  width: 330px;
-  height: 490px;
+  width: 100%;
+  max-width: 330px;
+  min-height: 490px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
@@ -19,6 +20,11 @@ const Card = styled.div`
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
+  @media only screen and (max-width: 768px) {
+    max-width: 100%;
+    min-height: unset;
+    padding: 18px 16px;
+  }
 `;
 const Image = styled.img`
   width: 100%;
@@ -26,6 +32,7 @@ const Image = styled.img`
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 `;
 const Tags = styled.div`
   width: 100%;
@@ -102,7 +109,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
       <Image src={project.image} />
       <Tags>
         {project.tags?.map((tag, index) => (
-          <Tag>{tag}</Tag>
+          <Tag key={`${tag}-${index}`}>{tag}</Tag>
         ))}
       </Tags>
       <Details>
@@ -112,7 +119,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
       </Details>
       <Members>
         {project.member?.map((member) => (
-          <Avatar src={member.img} />
+          <Avatar key={member.name} src={member.img} alt={member.name} />
         ))}
       </Members>
     </Card>

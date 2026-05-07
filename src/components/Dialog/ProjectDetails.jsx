@@ -11,24 +11,31 @@ const Container = styled.div`
   left: 0;
   background-color: #000000a7;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   justify-content: center;
-  overflow-y: scroll;
+  overflow-y: auto;
   transition: all 0.5s ease;
+  padding: 24px 12px;
 `;
 
 const Wrapper = styled.div`
   max-width: 800px;
   width: 100%;
   border-radius: 16px;
-  margin: 50px 12px;
-  height: min-content;
+  margin: 28px 0;
+  max-height: calc(100vh - 56px);
   background-color: ${({ theme }) => theme.card};
   color: ${({ theme }) => theme.text_primary};
   padding: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-y: auto;
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+    max-height: calc(100vh - 24px);
+    padding: 16px;
+  }
 `;
 
 const Title = styled.div`
@@ -68,7 +75,11 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 12px;
   margin-top: 30px;
+  max-height: 320px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  @media only screen and (max-width: 600px) {
+    max-height: 220px;
+  }
 `;
 
 const Label = styled.div`
@@ -149,6 +160,9 @@ const ButtonGroup = styled.div`
   justify-content: flex-end;
   margin: 12px 0px;
   gap: 12px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const Button = styled.a`
@@ -203,7 +217,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           <Date>{project.date}</Date>
           <Tags>
             {project?.tags.map((tag) => (
-              <Tag>{tag}</Tag>
+              <Tag key={tag}>{tag}</Tag>
             ))}
           </Tags>
           <Desc>{project?.description}</Desc>
@@ -212,19 +226,21 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
               <Label>Members</Label>
               <Members>
                 {project?.member.map((member) => (
-                  <Member>
-                    <MemberImage src={member.img} />
+                  <Member key={member.name}>
+                    <MemberImage src={member.img} alt={member.name} />
                     <MemberName>{member.name}</MemberName>
                     <a
                       href={member.github}
-                      target="new"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <GitHub />
                     </a>
                     <a
                       href={member.linkedin}
-                      target="new"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       <LinkedIn />
@@ -235,10 +251,10 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             </>
           )}
           <ButtonGroup>
-            <Button dull href={project?.github} target="new">
+            <Button dull href={project?.github} target="_blank" rel="noreferrer">
               View Code
             </Button>
-            <Button href={project?.webapp} target="new">
+            <Button href={project?.webapp} target="_blank" rel="noreferrer">
               View Live App
             </Button>
           </ButtonGroup>

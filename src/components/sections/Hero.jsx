@@ -16,7 +16,7 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 80px 24px;
   z-index: 1;
 
   @media (max-width: 960px) {
@@ -24,26 +24,32 @@ const HeroContainer = styled.div`
   }
 
   @media (max-width: 640px) {
-    padding: 32px 16px;
+    padding: 32px 16px 20px;
   }
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  @media (max-width: 768px) {
+    clip-path: none;
+  }
 `;
 const HeroInnerContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 36px;
   width: 100%;
   max-width: 1100px;
 
   @media (max-width: 960px) {
     flex-direction: column;
+    gap: 18px;
   }
 `;
 const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
+  min-width: 0;
   @media (max-width: 960px) {
     order: 2;
     margin-bottom: 30px;
@@ -58,17 +64,18 @@ const HeroRightContainer = styled.div`
   order: 2;
   display: flex;
   justify-content: end;
+  min-width: 0;
   @media (max-width: 960px) {
     order: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-contents: center;
-    margin-bottom: 80px;
+    justify-content: center;
+    margin-bottom: 24px;
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 `;
 
@@ -93,17 +100,19 @@ const TextLoop = styled.div`
   font-weight: 600;
   font-size: 32px;
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 1.4;
 
   @media (max-width: 960px) {
     text-align: center;
+    justify-content: center;
   }
 
   @media (max-width: 960px) {
     font-size: 22px;
-    line-height: 48px;
+    line-height: 1.5;
     margin-bottom: 16px;
   }
 `;
@@ -125,7 +134,8 @@ const SubTitle = styled.div`
 
   @media (max-width: 960px) {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 28px;
+    margin-bottom: 28px;
   }
 `;
 
@@ -154,6 +164,7 @@ const ResumeButton = styled.a`
   }
 
   @media (max-width: 640px) {
+    width: 100%;
     padding: 12px 0;
     font-size: 18px;
   }
@@ -167,6 +178,11 @@ const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border: 2px solid #29AB87;  // Updated border color to #29AB87
+
+  @media (max-width: 960px) {
+    max-width: 340px;
+    max-height: 340px;
+  }
 
   @media (max-width: 640px) {
     max-width: 280px;
@@ -187,7 +203,7 @@ const HeroBg = styled.div`
   height: 100%;
   max-width: 1360px;
   overflow: hidden;
-  padding: 0 30px;
+  padding: 0 24px;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -195,7 +211,7 @@ const HeroBg = styled.div`
 
   @media (max-width: 960px) {
     justify-content: center;
-    padding: 0 0px;
+    padding: 0;
   }
 `;
 

@@ -17,6 +17,7 @@ import { useState } from "react";
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
   position: relative;
 `;
@@ -35,6 +36,10 @@ const Wrapper = styled.div`
     );
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+  @media (max-width: 768px) {
+    clip-path: none;
+    padding-bottom: 72px;
+  }
 `;
 
 function App() {

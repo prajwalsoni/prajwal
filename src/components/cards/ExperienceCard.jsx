@@ -7,6 +7,7 @@ const Top = styled.div`
   display: flex;
   max-width: 100%;
   gap: 12px;
+  align-items: flex-start;
 `;
 const Image = styled.img`
   height: 50px;
@@ -25,7 +26,7 @@ const Body = styled.div`
 
 const Role = styled.div`
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
   color: ${({ theme }) => theme.text_primary + 99};
 
   @media only screen and (max-width: 768px) {
@@ -34,7 +35,7 @@ const Role = styled.div`
 `;
 const Company = styled.div`
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   color: ${({ theme }) => theme.text_secondary + 99};
 
   @media only screen and (max-width: 768px) {
@@ -43,7 +44,7 @@ const Company = styled.div`
 `;
 const Date = styled.div`
   font-size: 12px;
-  font-weight: 400px;
+  font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 80};
 
   @media only screen and (max-width: 768px) {
@@ -67,8 +68,9 @@ const Span = styled.div`
 const Skills = styled.div`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  margin-top: -10px;
+  margin-top: 4px;
 `;
 const Skill = styled.div`
   font-size: 15px;
@@ -154,7 +156,7 @@ const ExperienceCard = ({ experience }) => {
               <b>Skills:</b>
               <ItemWrapper>
                 {experience?.skills?.map((skill, index) => (
-                  <Skill>• {skill}</Skill>
+                  <Skill key={`${skill}-${index}`}>• {skill}</Skill>
                 ))}
               </ItemWrapper>
             </Skills>

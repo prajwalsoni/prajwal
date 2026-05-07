@@ -6,13 +6,14 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 const Container = styled.div`
-margin-top: 100px;
-display: flex;
-flex-direction: column;
-justify-content-center;
-position: relative;
-z-index: 1;
-align-items: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
 `;
 const Wrapper = styled.div`
   position: relative;
@@ -22,7 +23,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
-  gap: 12px;
+  gap: 16px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -45,6 +46,7 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
+  max-width: 720px;
   @media (max-width: 768px) {
     font-size: 16px;
   }
